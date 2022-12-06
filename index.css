@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(225, 243, 184);
+}
+
+.box {
+    display: flex;
+    width: 33.33%;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5em;
+    border: solid rgb(47, 7, 51) .5em;
+    background-color: rgb(225, 243, 184);
+    color: rgb(72, 39, 73);
+    font-size: 1.5em;
+}
+
+.box h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.box h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.boxRow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#increment-btn {
+    border: solid rgb(47, 7, 51);
+    background-color: gainsboro;
+    margin: 1em 10em 1em 10em;
+}
+
+#kirbyRun {
+    display: flex;
+    width: 10%;
+}
+
+#playMe {
+    color: white;
+    background-color: rgb(92, 102, 190);
+}
+
+#calculator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#calc1 {
+    display: flex;
+    justify-content: center;
+}
+
+#calc2 {
+    display: flex;
+    justify-content: center;
+}
+
+#calculator button {
+    margin: 2em 1em 2em 1em;
+    width: 40%;
+    background-color: black;
+    color: rgb(225, 243, 184);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        height: 100%;
+        min-height: 100%;
+    }
+    h1 {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+    .boxRow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2 2 20em;
+        width: 30%;
+        min-width: 30%;
+        margin: 0;
+        padding: 0;
+    }
+}
