@@ -3,11 +3,25 @@
 let box1Count = 0;
 let box1Counter = document.getElementById("box1-Counter");
 let kirbyRun = document.getElementById("kirbyRun");
+var keysDown = {};
+
+//adds key recognition to console
+addEventListener("keydown", function (e) {
+    console.log(e);
+	keysDown[e.key] = true;
+}, false);
+
+addEventListener("keyup", function (e) {
+	delete keysDown[e.key];
+}, false);
+
 
 function increment() {
     box1Count = box1Count + 1;
     box1Counter.innerText = box1Count;
 }
+
+
 
 
 //Rock Paper Scissors
